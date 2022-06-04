@@ -5,12 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js" defer></script>
+	<script src="dist/script.js" defer></script>
 	<title>Multistep form</title>
 </head>
 <body>
-	<form>
-		<div class="card active" step="1">
+	<form multistep-form>
+		<div class="card active" step>
 			<h3 class="step-title">Step 1</h3>
 			<div class="form-group">
 				<label for="email">Email</label>
@@ -22,7 +22,7 @@
 			</div>
 			<button type="button">Next</button>
 		</div>
-		<div class="card" step="2">
+		<div class="card" step>
 			<h3 class="step-title">Step 2</h3>
 			<div class="form-group">
 				<label for="address">Address</label>
@@ -39,7 +39,7 @@
 			<button type="button">Previous</button>
 			<button type="button">Next</button>
 		</div>
-		<div class="card" step="3">
+		<div class="card" step>
 			<h3 class="step-title">Step 3</h3>
 			<div class="form-group">
 				<label for="firstname">First Name</label>
