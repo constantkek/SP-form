@@ -1,0 +1,26 @@
+{
+  "name": "sp-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constantkek/SP-form.git"
+  },
+  "keywords": [
+    "form",
+    "multistep",
+    "typescript",
+    "css"
+  ],
+  "author": "Konstantin Kletsyn <kkletsyn@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constantkek/SP-form/issues"
+  },
+  "homepage": "https://github.com/constantkek/SP-form#readme"
+}
