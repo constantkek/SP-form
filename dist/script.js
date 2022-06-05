@@ -5,6 +5,10 @@ class Form {
         this.steps = [...document.querySelectorAll('[step]')];
         this.prevButtons = [...document.querySelectorAll('[btn-prev]')];
         this.nextButtons = [...document.querySelectorAll('[btn-next]')];
+        this.inputs = [];
+        this.steps.forEach((step) => {
+            this.inputs.push([...step.querySelectorAll('input')]);
+        });
         this.addEventListeners();
         this.currentStepIndex = this.getCurrentStepIndex();
     }
@@ -34,7 +38,10 @@ class Form {
         });
         this.nextButtons.forEach((button, index) => {
             button.addEventListener('click', () => {
-                this.updateCurrentStep(index + 1);
+                const allValid = this.inputs[this.currentStepIndex].every(input => input.checkValidity());
+                if (allValid) {
+                    this.updateCurrentStep(index + 1);
+                }
             });
         });
     }
